@@ -1,0 +1,21 @@
+create database and its tables..
+build python code for table gen and db models..
+build rest api..
+sign up users..
+build authentication..
+make dashboard show user details
+
+crack logic of calling pictures using markdown..
+gather pictures for notes
+fix latex issues in notes..
+add Got It button in notesviewer..
+
+crack logic of adding data to backend python db on api call with file attachment..
+add notes to database..
+add pictures to database also..
+
+
+fix layout issues with tailwind 
+
+
+python -m ipykernel install --user --name=mathlearn --display-name "Python (Math Learner)"

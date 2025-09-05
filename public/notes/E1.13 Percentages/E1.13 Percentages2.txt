@@ -1,0 +1,108 @@
+# E1.13 Percentages
+
+## 1. Calculating a Percentage of a Quantity
+
+To find a percentage of a quantity:
+- Convert percentage to decimal (divide by 100)
+- Multiply by the quantity
+
+**Example**: Find 15% of 240
+- 15% = 15 ÷ 100 = 0.15
+- 0.15 × 240 = 36
+
+## 2. Expressing One Quantity as a Percentage of Another
+
+To express A as a percentage of B:
+- Divide A by B
+- Multiply by 100
+
+**Example**: Express 18 as a percentage of 45
+- (18 ÷ 45) × 100 = 40%
+
+## 3. Percentage Increase or Decrease
+
+### Percentage Increase
+$\text{Increase} = \text{Original} \times \frac{\text{Percentage}}{100}$
+
+$\text{New Amount} = \text{Original} \times (1 + \frac{\text{Percentage}}{100})$
+
+### Percentage Decrease
+$\text{Decrease} = \text{Original} \times \frac{\text{Percentage}}{100}$
+
+$\text{New Amount} = \text{Original} \times (1 - \frac{\text{Percentage}}{100})$
+
+**Example**: Increase 80 by 15%
+- Increase = 80 × 0.15 = 12
+- New amount = 80 + 12 = 92
+- Or: 80 × 1.15 = 92
+
+## 4. Simple and Compound Interest
+
+### Simple Interest
+$\text{Interest} = \text{Principal} \times \text{Rate} \times \text{Time}$
+
+**Example**: $500 at 4% simple interest for 3 years
+- Interest = 500 × 0.04 × 3 = $60
+- Total = 500 + 60 = $560
+
+### Compound Interest
+$\text{Amount} = P(1 + \frac{r}{100})^n$
+Where:
+- P = principal
+- r = rate per period
+- n = number of periods
+
+**Example**: $500 at 4% compound interest for 3 years
+- Amount = 500 × (1.04)³
+- = 500 × 1.124864 = $562.43
+
+## 5. Reverse Percentages
+
+Finding original value given final value and percentage change.
+
+**Example**: After 20% discount, price is $96. Find original price.
+- Discounted price = 80% of original (100% - 20%)
+- Original = 96 ÷ 0.80 = $120
+
+**Example**: Cost price given selling price $138 and 15% profit
+- Selling price = 115% of cost price
+- Cost price = 138 ÷ 1.15 = $120
+
+# E1.14 Using a Calculator
+
+## 1. Efficient Calculator Use
+- Use memory functions for multi-step calculations
+- Use brackets to ensure correct order of operations
+- Know how to access secondary functions
+
+## 2. Appropriate Value Entry
+**Time examples**:
+- 2 hours 30 minutes = 2.5 hours or 2° 30' 0"
+- 3 hours 15 minutes = 3.25 hours
+
+**Money examples**:
+- 4.8 = $4.80
+- 12.75 = $12.75
+
+**Fraction examples**:
+- ¾ = 0.75
+- 2½ = 2.5
+
+## 3. Interpreting Calculator Display
+- Don't round intermediate values
+- Only round final answer to required accuracy
+- Understand when calculator shows fractions vs decimals
+- Recognize recurring decimal notation (e.g., 0.333...)
+
+**Example**: Calculate ⅔ of 45
+- Enter 2 ÷ 3 × 45 = 30
+- Don't round 0.6666667 to 0.67 before multiplying
+
+## Key Points to Remember
+- For percentage problems, identify whether you need to find percentage of, express as percentage, or reverse percentage
+- With compound interest, amount grows exponentially
+- Reverse percentages require dividing by the percentage multiplier
+- Calculator entries must match the units required in the answer
+- Always check if answer needs rounding in context
+
+These skills are essential for financial calculations, data analysis, and real-world problem solving.

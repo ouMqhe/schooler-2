@@ -1,0 +1,42 @@
+# Set Theory Essentials
+
+## Set Notation & Language
+
+A **set** is a collection of distinct objects, called **elements**.
+
+**Notation**:
+- Curly braces denote a set: $A = \{1, 2, 3, 4\}$
+- $n(A)$: Number of elements in set A (e.g., $n(A) = 4$)
+- $\varepsilon$: Universal set (all elements under consideration)
+- $A'$: Complement of set A (elements not in A but in $\varepsilon$)
+
+## Set Definitions
+
+Sets can be defined by:
+- **Listing elements**: $B = \{a, b, c\}$
+- **Describing properties**: $A = \{x: x \text{ is a natural number}\}$
+- **Using inequalities**: $C = \{x: a < x < b\}$
+
+## Venn Diagrams
+
+Visual representations showing relationships between sets. Limited to **two sets** in this course.
+
+## Key Operations
+
+**Union ($A \cup B$)**: All elements in A **or** B or both  
+**Intersection ($A \cap B$)**: Elements common to **both** A and B
+
+## Practical Example
+
+Let:
+- $\varepsilon = \{1, 2, 3, 4, 5, 6, 7, 8\}$
+- $A = \{1, 2, 3, 4\}$
+- $B = \{3, 4, 5, 6\}$
+
+Then:
+- $A \cup B = \{1, 2, 3, 4, 5, 6\}$
+- $A \cap B = \{3, 4\}$
+- $A' = \{5, 6, 7, 8\}$
+- $n(A) = 4$
+
+Venn diagrams help visualize these relationships and solve problems involving set counts.

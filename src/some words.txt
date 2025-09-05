@@ -1,0 +1,7 @@
+npm create vite@latest math-skwali-app -- --template react
+cd my-material-tailwind-app
+npm install
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
