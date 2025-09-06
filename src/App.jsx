@@ -52,7 +52,7 @@ function App() {
                 <Quizzer />
               </PublicRoute>
             } /> */}
-            <Route path="/about" element={
+            <Route path="/" element={
               <PublicRoute>
                 <NoteViewer />
               </PublicRoute>
