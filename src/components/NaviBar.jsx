@@ -27,7 +27,7 @@ function HideOnScroll(props) {
 }
 
 const Navibar = ({ 
-  brandName = "lafinitezky", 
+  brandName = "Learn STEM", 
   navItems = [
     { name: "Dashboard", url: "/dashboard" },
     { name: "About", url: "/about" },

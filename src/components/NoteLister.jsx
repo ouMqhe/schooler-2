@@ -10,6 +10,9 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import { Button } from '@mui/material';
+import CardGridLayout from './CardGridLaout';
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -42,7 +45,7 @@ const ItemList = () => {
   };
 
   const closePopup = () => {
-    setIsPopupOpen(false);
+    toggleDrawer(false);
     setMarkdown("");
     setSelectedItem(null);
   };
@@ -54,27 +57,21 @@ const ItemList = () => {
     };
 
   return (
-    <div sx={{ 
+    <div 
+    sx={{ 
   backgroundColor: '#c0a4a4ff'
-
-        }}>
-        <Box sx={{ flexGrow: 1  }}>
+        }}
+        >
+        {/* <Box sx={{ flexGrow: 1  }}>
       <Grid >
-        
         <Grid size={8}>
-          
-
-    {/* <div className="container mx-auto p-4 bg-gray-400"> */}
     <Item>
       <h1 className=" mb-4">Notes Listed</h1>
       <ul className="space-y-2">
         <Box sx={{ flexGrow: 1 }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-
-        
         {items.map((item) => (
           <Grid size={4}>
-            
             <Item>
           <ImgMediaCard
             key={item.id}
@@ -85,27 +82,41 @@ const ItemList = () => {
           />
           </Item>
   </Grid>
-
-
         ))}
         </Grid>
         </Box>
       </ul>
       </Item>
-      {/* </div> */}
-
         </Grid>
         <Grid size={2}>
           <Item>size=4</Item>
         </Grid>
       </Grid>
     </Box>
+     */}
+
+    <CardGridLayout className="p-4 bg-gray-100 min-h-screen">
+
+    {items.map((item) => (
+
+          <ImgMediaCard
+            key={item.id}
+            md = {markdown}
+            title={item.description}
+            dscrption={item.name}
+            linkto={() => handleItemClick(item)}
+          />
+
+        ))}
+    </CardGridLayout>
 
 
       <Drawer open={open} onClose={toggleDrawer(false)}>
             <Notes markdown={markdown}/>
-        
+        <Button onClick={() => closePopup()}>Close Drawer</Button>
+
 </Drawer>
+
 </div>
   );
 };

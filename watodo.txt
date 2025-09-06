@@ -1,4 +1,4 @@
-create database and its tables..
+cdcreate database and its tables..
 build python code for table gen and db models..
 build rest api..
 sign up users..
