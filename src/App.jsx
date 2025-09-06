@@ -21,7 +21,7 @@ import Dashboard from './pages/Dashboard';
 import Quizzer from './pages/Quizzer';
 // import Settings from './pages/Settings';
 import Navibar from './components/NaviBar';
-import ResponsiveAppBar from './components/NavB';
+
 function App() {
   return (
     <AuthProvider>
