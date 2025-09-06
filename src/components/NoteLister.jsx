@@ -112,9 +112,9 @@ const ItemList = () => {
 
 
       <Drawer open={open} onClose={toggleDrawer(false)}>
+        
             <Notes markdown={markdown}/>
-        <Button onClick={() => closePopup()}>Close Drawer</Button>
-
+        {/* <Button onClick={toggleDrawer(false)}>I Got It</Button> */}
 </Drawer>
 
 </div>
