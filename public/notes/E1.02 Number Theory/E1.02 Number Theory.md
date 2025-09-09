@@ -1,0 +1,53 @@
+# Number Theory Essentials
+
+## Core Number Types
+
+**Natural Numbers**: Counting numbers (1, 2, 3, ...)  
+**Integers**: Whole numbers including negatives and zero (..., -2, -1, 0, 1, 2, ...)  
+**Prime Numbers**: Divisible only by 1 and itself (2, 3, 5, 7, 11, ...)  
+**Square Numbers**: Result of integer squared ($4^2 = 16$, $5^2 = 25$)  
+**Cube Numbers**: Result of integer cubed ($2^3 = 8$, $3^3 = 27$)
+
+## Factors & Multiples
+
+**Common Factors**: Numbers that divide exactly into two or more numbers  
+**Highest Common Factor (HCF)**: Largest common divisor  
+Example: HCF of 18 and 24 is 6
+
+**Common Multiples**: Numbers that are multiples of two or more numbers  
+**Lowest Common Multiple (LCM)**: Smallest common multiple  
+Example: LCM of 4 and 6 is 12
+
+## Prime Factorization
+
+Breaking numbers into prime factors using factor trees:
+
+$$72 = 2 \times 2 \times 2 \times 3 \times 3 = 2^3 \times 3^2$$
+
+## Rational vs. Irrational
+
+**Rational Numbers**: Expressible as $\frac{a}{b}$ where $a,b$ are integers ($b \neq 0$)  
+Includes: integers, terminating decimals ($0.75 = \frac{3}{4}$), repeating decimals ($0.\overline{3} = \frac{1}{3}$)
+
+**Irrational Numbers**: Cannot be expressed as simple fractions  
+Examples: $\pi$, $\sqrt{2}$, non-repeating non-terminating decimals
+
+## Reciprocals
+
+The reciprocal of a number is 1 divided by that number:
+
+- Reciprocal of $a$ is $\frac{1}{a}$ ($a \neq 0$)
+- Reciprocal of $\frac{2}{3}$ is $\frac{3}{2}$
+- Product of number and reciprocal always equals 1: $a \times \frac{1}{a} = 1$
+
+## Conversion Skills
+
+**Number to Words**:  
+6,000,000,000 = six billion  
+10,007 = ten thousand and seven
+
+**Words to Number**:  
+"Seventy-two" = 72  
+"Three and three quarters" = $3\frac{3}{4}$
+
+**Key Practice**: Prime factorization, finding HCF/LCM, converting between number forms

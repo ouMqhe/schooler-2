@@ -10,7 +10,23 @@ export default function Notes({ markdown, linkto }) {
     console.log("Markdown content:", markdown);
  
   // Custom renderer for images to handle relative paths
- 
+     //ReactMarkdown accepts custom renderers
+    const renderers = {
+        //This custom renderer changes how images are rendered
+        //we use it to constrain the max width of an image to its container
+        image: ({
+            alt,
+            src,
+            title,
+        }) => (
+            <img 
+                alt={alt} 
+                src={src} 
+                title={title} 
+                style={{ maxWidth: 475 }}  />
+        ),
+    };
+
   return (
     <div 
     

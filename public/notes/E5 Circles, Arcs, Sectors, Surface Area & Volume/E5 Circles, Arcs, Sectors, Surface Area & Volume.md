@@ -1,0 +1,84 @@
+# E5: Circles, Arcs, Sectors, Surface Area & Volume
+
+## E5.3 Circles, Arcs and Sectors
+
+### Circumference and Area of a Circle
+
+These formulas are provided in your exam's formula sheet. You must know how to apply them.
+
+*   **Circumference (Perimeter):** $C = 2\pi r$ or $C = \pi d$
+    where $r$ is the radius and $d$ is the diameter.
+*   **Area:** $A = \pi r^2$
+
+Answers are often required **in terms of $\pi$**, meaning you should not multiply by $\pi$'s numerical value in your final answer. For example, if $r = 5$, the area is $A = \pi \times 5^2 = 25\pi$.
+
+### Arc Length and Sector Area
+
+A **sector** is a fraction of a circle, like a slice of pizza. It is defined by its angle $\theta$ at the center. An **arc** is the curved part of the sector's circumference.
+
+*Visual aid: CircleSectorDiagram*
+
+To find the arc length and sector area, we find the fraction of the full circle that the sector represents. This fraction is $\frac{\theta}{360}$, where $\theta$ is the angle of the sector in degrees.
+
+*   **Arc Length:** $l = \frac{\theta}{360} \times 2\pi r = \frac{\theta}{360} \times \pi d$
+*   **Sector Area:** $A = \frac{\theta}{360} \times \pi r^2$
+
+**Example:** Find the arc length of a sector with a radius of 9 cm and an angle of $40\degree$. Leave your answer in terms of $\pi$.
+$$ l = \frac{40}{360} \times 2 \times \pi \times 9 $$
+$$ l = \frac{1}{9} \times 18\pi $$
+$$ l = 2\pi \text{ cm} $$
+
+**Major vs. Minor Sectors:** The smaller sector is the **minor sector**. The larger one, making up the rest of the circle, is the **major sector**. To find the major sector's area, calculate the minor sector's area and subtract it from the total area of the circle ($\pi r^2$).
+
+---
+
+## E5.4 Surface Area and Volume
+
+The following formulas are provided in your exam's formula sheet.
+
+### Prism
+
+A **prism** is any solid with a **uniform cross-section** (the same shape all along its length). This includes cuboids and cylinders.
+
+*   **Volume:** $V = \text{area of cross-section} \times \text{length}$
+    This is the most important formula for a prism.
+
+### Cuboid
+
+A cuboid is a prism with a rectangular cross-section.
+
+*   **Volume:** $V = l \times w \times h$ (this follows $V = \text{area of rectangle} \times \text{length}$)
+*   **Surface Area:** $SA = 2(lw + lh + wh)$
+    *Find the area of all 6 faces and add them together.*
+
+### Cylinder
+
+A cylinder is a prism with a circular cross-section.
+
+*   **Volume:** $V = \pi r^2 h$ (this is $V = \text{area of circle} \times \text{height}$)
+*   **Surface Area:** $SA = 2\pi r^2 + 2\pi rh$
+    The formula sheet gives the **Curved Surface Area**: $CSA = 2\pi rh$. The total surface area adds the areas of the two circular ends.
+
+### Sphere
+
+*   **Volume:** $V = \frac{4}{3}\pi r^3$
+*   **Surface Area:** $SA = 4\pi r^2$
+
+### Pyramid
+
+*   **Volume:** $V = \frac{1}{3} \times \text{area of base} \times h$
+    The base can be any shape (square, rectangular, triangular). $h$ is the perpendicular height.
+
+### Cone
+
+*   **Volume:** $V = \frac{1}{3}\pi r^2 h$
+*   **Curved Surface Area:** $CSA = \pi r l$
+    where $l$ is the slant height. The total surface area adds the area of the circular base: $SA = \pi r l + \pi r^2$.
+
+**General Problem-Solving Tips:**
+1.  Identify the solid.
+2.  Write down the known values (r, h, l, etc.).
+3.  Choose the correct formula from the list you are given.
+4.  Substitute the values into the formula.
+5.  Calculate, leaving your answer in terms of $\pi$ if requested.
+6.  Always include the correct units (e.g., cm³, m²).
