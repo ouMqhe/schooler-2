@@ -73,7 +73,7 @@ function App() {
                 <Dashboard />
               </ProtectedRoute>
             } />
-            <Route path="/profile" element={
+            <Route path="/quizz" element={
               <ProtectedRoute>
                 <Quizzer />
               </ProtectedRoute>

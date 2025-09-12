@@ -30,8 +30,8 @@ const Navibar = ({
   brandName = "Learn STEM", 
   navItems = [
     { name: "Dashboard", url: "/dashboard" },
-    { name: "About", url: "/about" },
-    { name: "Contact", url: "/profile" }
+    { name: "Login", url: "/login" },
+    { name: "Quiz", url: "/quizz" }
   ],
   position = "fixed",
   elevation = 4,

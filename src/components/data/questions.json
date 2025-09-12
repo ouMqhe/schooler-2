@@ -1,27 +1,4 @@
-import React from 'react'
-import Quiz from '../components/Quiz'
-// import Quizz from '../components/Quizz';
-// import questions from '../components/data/questions.json';
-import Question from '../components/Question';
-import QResult from '../components/QResult';
-
-import {useState} from "react";
-
-// const questions = [
-//   {
-//     question: "What is 2 + 2?",
-//     options: ["3", "4", "5", "6"],
-//     correctIndex: 1,
-//   },
-//   {
-//     question: "What is the square root of 9?",
-//     options: ["1", "2", "3", "4"],
-//     correctIndex: 2,
-//   },
-//   // Add more questions...
-// ];
-
-const questions = [
+[
   {
     "question": "What is the largest planet in our solar system?",
     "answerOptions": [
@@ -113,49 +90,3 @@ const questions = [
     ]
   }
 ]
-
-function Quizzer() {
-
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [userAnswers, setUserAnswers] = useState([]);
-
-  // Keep all of the logic in App.jsx
-
-  const handleNextQuestion = (isCorrect) => {
-    setCurrentQuestion(currentQuestion + 1);
-    setUserAnswers([...userAnswers, isCorrect]);
-  };
-
-  const resetQuiz = () => {
-    setCurrentQuestion(0);
-    setUserAnswers([]);
-  };
-
-
-  return (
-    // <Quiz questions={questions} />
-    <>
-    
-          <h1>World Quiz</h1>
-
-      {/* Questions Component */}
-      {currentQuestion < questions.length && (
-        <Question
-          question={questions[currentQuestion]}
-          onAnswerClick={handleNextQuestion}
-        />
-      )}
-
-      {/* Result Component */}
-      {currentQuestion === questions.length && (
-        <QResult
-          userAnswers={userAnswers}
-          questions={questions}
-          resetQuiz={resetQuiz}
-        />
-      )}
-    </>
-  )
-}
-
-export default Quizzer
