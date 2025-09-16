@@ -18,7 +18,7 @@ A reflection is a **flip** of a shape over a mirror line. The mirror line is cal
 2.  Plot the image vertex the same distance on the opposite side of the line.
 3.  Join the image vertices together.
 
-*Visual aid: ReflectionDiagram*
+![Reflection](https://i.ibb.co/jP3yzy5j/reflection.png)
 
 ### 2. Rotation
 
@@ -67,7 +67,8 @@ A translation is a **slide** of a shape. Every point in the shape moves the same
 1.  For each vertex of the object, move it $x$ units horizontally and $y$ units vertically.
 2.  Plot the new points and join them.
 
-*Visual aid: TranslationDiagram*
+
+![Translation](https://i.ibb.co/84nhRGGN/translatn.png)
 
 **Combined Transformations:** A question may ask you to perform one transformation and then another on the image. Describe the **single transformation** that would map the original object directly to the final image.
 
@@ -114,4 +115,5 @@ $$ k \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} kx \\ ky \end{pmatri
 
 **Example:**
 $$ 3 \begin{pmatrix} 2 \\ -1 \end{pmatrix} = \begin{pmatrix} 6 \\ -3 \end{pmatrix} $$
+
 $$ -2 \begin{pmatrix} 1 \\ 4 \end{pmatrix} = \begin{pmatrix} -2 \\ -8 \end{pmatrix} $$
