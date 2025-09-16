@@ -10,7 +10,7 @@ The formula is:
 $$ a^2 + b^2 = c^2 $$
 where $c$ is the length of the **hypotenuse**, and $a$ and $b$ are the lengths of the other two sides.
 
-*Visual aid: PythagorasTheorem*
+![Pythagoras](https://i.ibb.co/v4mCzpLS/pythagoras.png)
 
 **Example:** Find the length of the hypotenuse in a triangle with the other two sides measuring 5 cm and 12 cm.
 $$ c^2 = 5^2 + 12^2 $$
@@ -42,7 +42,7 @@ For an acute angle $\theta$ in a right-angled triangle, the three main trigonome
 
 **Remember SOH CAH TOA!** This is the key to choosing the correct ratio.
 
-*Visual aid: SohCahToa*
+![SohCahToa](https://i.ibb.co/0jFX6NN9/sohcahtoa.png)
 
 ### 2. Solving Problems
 
@@ -97,4 +97,5 @@ These are angles measured from the horizontal.
 **Notes:**
 *   Always ensure your calculator is in **degree mode**.
 *   Final answers for angles should be given in **degrees, correct to one decimal place**.
+
 *   These concepts are often combined with **bearings** and real-world problems.
