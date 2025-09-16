@@ -2,8 +2,6 @@
 
 // App.jsx
 import './App.css'
-import Navi from './components/Navbar';
-import React from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -15,42 +13,23 @@ import PublicRoute from './components/PublicRoute';
 import Login from './pages/Login';
 // import Register from './pages/Register';
 import NoteViewer from './pages/NoteViewer';
-
+import MyCV from './pages/MyResume';
+import NoteWSlug from './components/NoteWSlug';
 // Protected components
 import Dashboard from './pages/Dashboard';
-import Quizzer from './pages/Quizzer';
 // import Settings from './pages/Settings';
 import Navibar from './components/NaviBar';
 function App() {
   return (
     <AuthProvider>
 
-      {/* <Router> */}
         <div>
-          {/* <ResponsiveAppBar/> */}
           <div className='pb-20'><Navibar/></div>
-                {/* <nav>
-             <ul>
-               <li>
-                 <Link to="/about">Home</Link>
-               </li>
-               <li>
-                 <Link to="/profile">Quizzer</Link>
-               </li>
-               <li>
-                 <Link to="/dashboard">Dashboard</Link>
-               </li>
-             </ul>
-           </nav> */}
       
            <hr />
           <Routes>
             {/* Public routes */}
-            {/* <Route path="/" element={
-              <PublicRoute>
-                <Quizzer />
-              </PublicRoute>
-            } /> */}
+            
             <Route path="/" element={
               <PublicRoute>
                 <NoteViewer />
@@ -61,11 +40,12 @@ function App() {
                 <Login />
               </PublicRoute>
             } />
-            {/* <Route path="/register" element={
-              <PublicRoute restricted={true}>
-                <Register />
+            <Route path="/notes/:slug" element={
+              <PublicRoute>
+                {/* <MyCV /> */}
+                <NoteWSlug />
               </PublicRoute>
-            } /> */}
+            } />
 
             {/* Protected routes */}
             <Route path="/dashboard" element={
@@ -73,10 +53,10 @@ function App() {
                 <Dashboard />
               </ProtectedRoute>
             } />
-            <Route path="/quizz" element={
-              <ProtectedRoute>
-                <Quizzer />
-              </ProtectedRoute>
+            <Route path="/maker" element={
+              <PublicRoute>
+                <MyCV />
+              </PublicRoute>
             } />
             {/* <Route path="/settings" element={
               <ProtectedRoute>
@@ -95,7 +75,6 @@ function App() {
             } />
           </Routes>
         </div>
-      {/* </Router> */}
     </AuthProvider>
   );
 }

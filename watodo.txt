@@ -19,3 +19,10 @@ fix layout issues with tailwind
 
 
 python -m ipykernel install --user --name=mathlearn --display-name "Python (Math Learner)"
+
+
+get each pic on its required blog
+get each page on its own slug page thing
+get quiz at end of each blog on a dialog page thing
+create personal profile page
+netlify postgres?? netlify flask??

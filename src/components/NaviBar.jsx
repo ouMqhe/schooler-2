@@ -12,7 +12,7 @@ import {
   useTheme,
   useMediaQuery
 } from '@mui/material';
-// import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '@mui/icons-material/Menu';
 
 // Component to hide AppBar on scroll
 function HideOnScroll(props) {
@@ -27,11 +27,11 @@ function HideOnScroll(props) {
 }
 
 const Navibar = ({ 
-  brandName = "Learn STEM", 
+  brandName = "Learn Maths", 
   navItems = [
     { name: "Dashboard", url: "/dashboard" },
     { name: "Login", url: "/login" },
-    { name: "Quiz", url: "/quizz" }
+    { name: "About Me", url: "/maker" }
   ],
   position = "fixed",
   elevation = 4,
@@ -55,7 +55,7 @@ const Navibar = ({
         position={position} 
         elevation={elevation}
         sx={{ 
-          backgroundColor: '#bec4d1ff',
+          backgroundColor: '#8894afff',
           color: 'text.primary',
           py: 1
         }}
@@ -115,7 +115,7 @@ const Navibar = ({
                 onClick={handleOpenNavMenu}
                 color="inherit"
               >
-                {/* <MenuIcon /> */}
+                <MenuIcon />
               </IconButton>
               <Menu
                 id="menu-appbar"

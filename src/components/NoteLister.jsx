@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetailsPopup from './ItemDetailsPopup';
 // import { Button } from "@material-tailwind/react";
-import {noteList} from './data/notesList';
+import {noteList} from './data/noteslist';
 import ImgMediaCard from './Card';
 import Drawer from '@mui/material/Drawer';
 import Notes from './Note';

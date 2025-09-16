@@ -6,10 +6,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useState } from 'react';
-import ItemDetailsPopup from './ItemDetailsPopup';
 import Drawer from '@mui/material/Drawer';
 import Notes from './Note';
 import { styled } from '@mui/material/styles';
+import { Link } from 'react-router-dom';
+
 
 const FloatingCard = styled(Card)(({ theme }) => ({
   borderRadius: '16px',
@@ -38,27 +39,34 @@ const FloatingCard = styled(Card)(({ theme }) => ({
   },
 }));
 
-
+export const generateSlug = (title) => {
+  return title
+    .toLowerCase()
+    .replace(/[^\w ]+/g, '')
+    .replace(/ +/g, '-');
+};
 
 export default function ImgMediaCard({title, md, dscrption}) {
   
   const [open, setOpen] = useState(false);
   const [markdown, setMarkdown] = useState("");
+  const slug = generateSlug(title);
 
-  const toggleDrawer = (newOpen) => () => {
-    setOpen(newOpen);
-      fetch(`/notes/${title}/${title}.md`)
-      .then((res) => res.text())
-      .then(setMarkdown)
-      .then(() => console.log(title))
-      // .then(() => console.log(markdown));
+  const toggleDrawer = (slug) => () => {
+    // setOpen(newOpen);
+    //   fetch(`/notes/${title}/${title}.md`)
+    //   .then((res) => res.text())
+    //   .then(setMarkdown)
+    //   .then(() => console.log(title))
+    //   // .then(() => console.log(markdown));
+    window.location.href = `/notes/${slug}`;
   };
 
 
   return (
     <>
     <FloatingCard sx={{ maxWidth: 345,
-          backgroundColor: '#f1a0bf36',
+          backgroundColor: '#ecc1d27e',
 
      }}>
       <CardMedia
@@ -77,23 +85,22 @@ export default function ImgMediaCard({title, md, dscrption}) {
       </CardContent>
       <CardActions>
         <Button  size="small"
-        onClick={toggleDrawer(true)}
+        onClick={toggleDrawer(slug)}
+        // to={`/notes/${slug}`}
+        fullWidth
         >Read</Button>
         
       </CardActions>
     </FloatingCard>
-    <Drawer open={open} 
+    {/* <Drawer open={open} 
     anchor='bottom'
     onClose={toggleDrawer(false)}
     
-    >
-  {/* {DrawerList} */}
-        {/* <ItemDetailsPopup markdown={md} title={title}  /> */}
-            <Notes markdown={markdown}
+    >            <Notes markdown={markdown}
             linkto ={toggleDrawer(false)}
             />
           
-</Drawer>
+</Drawer> */}
     </>
   );
 }
